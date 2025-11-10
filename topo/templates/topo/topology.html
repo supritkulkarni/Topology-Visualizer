@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Topology</title>
+    <link rel="stylesheet" href="{% static 'topo/topology.css' %}">
+    <script src="https://unpkg.com/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+</head>
+<body>
+    <div id="toolbar">
+        <button id="fit">Fit</button>
+        <button id="reset-layout">Reset layout</button>
+    </div>
+    <div id="topology"></div>
+    <script src="{% static 'topo/topology.js' %}"></script>
+</body>
+</html>
